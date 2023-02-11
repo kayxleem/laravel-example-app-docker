@@ -1,16 +1,44 @@
 # ![Laravel RealWorld Example App](.github/readme/logo.png)
 
-[![RealWorld: Backend](https://img.shields.io/badge/RealWorld-Backend-blueviolet.svg)](https://github.com/gothinkster/realworld)
-[![Tests: status](https://github.com/f1amy/laravel-realworld-example-app/actions/workflows/tests.yml/badge.svg)](https://github.com/f1amy/laravel-realworld-example-app/actions/workflows/tests.yml)
-[![Coverage: percent](https://codecov.io/gh/f1amy/laravel-realworld-example-app/branch/main/graph/badge.svg)](https://codecov.io/gh/f1amy/laravel-realworld-example-app)
-[![Static Analysis: status](https://github.com/f1amy/laravel-realworld-example-app/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/f1amy/laravel-realworld-example-app/actions/workflows/static-analysis.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://opensource.org/licenses/MIT)
 
-> Example of a PHP-based Laravel application containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) API spec.
 
-This codebase was created to demonstrate a backend application built with [Laravel framework](https://laravel.com/) including RESTful services, CRUD operations, authentication, routing, pagination, and more.
+# Installation with docker
 
-We've gone to great lengths to adhere to the **Laravel framework** community style guides & best practices.
+## Prerequisites
+
+#### 1. A ubuntu operating system 
+#### 2. docker installed
+
+## Step1 - Clone the repository and change directory
+
+
+## Step2 - create the env file from env example and edit the necessary variables
+
+cp .env.example .env
+
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=yourusername
+DB_PASSWORD=yourpassword
+
+
+## Step 3 - Build your app
+
+docker-compose build 
+
+## Step 4  When the build is finished, you can run the environment in background mode with:
+
+$ docker-compose up -d
+
+
+
+
+
+
+
+
 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
